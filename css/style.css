@@ -100,7 +100,7 @@ header ul li a {
   background: #fff;
   text-align: center;
   padding-bottom: 50px;
-  background-image: url(./imagesfolder/jack_dorsey.webp);
+  background-image: url(../images/jack_dorsey.webp);
 }
 
 .about h2 {
@@ -119,6 +119,8 @@ header ul li a {
   height: 230px;
   background: #000;
   display: inline-block;
+  border: 2px solid #ddd;
+  border-radius: 10px;
   margin: 10px;
   font-size: 40px;
   line-height: 230px;
@@ -131,6 +133,49 @@ header ul li a {
   transition: 1s linear;
 }
 
+.about #tribute {
+  background-image: url("../images/jack-dorsey.jpg");
+}
+
+.about #random {
+  background-image: url("../images/quote.jpg");
+}
+
+.about #weather {
+  background-image: url("../images/cloud.png");
+}
+
+.about #wikipedia {
+  background-image: url("../images/wikipedia.jpg");
+}
+
+.about #twitch {
+  background-image: url("../images/twitch.png");
+}
+
+.about #calculator {
+  background-image: url("../images/Calculator-icon.png");
+}
+
+.about #pomodoro {
+  background-image: url("../images/pomo-clock.png");
+}
+
+.about #tic_tac_toe {
+  background-image: url("../images/Tic-Tac-Toe-Game-grey.ico");
+}
+
+.about #simon {
+  background-image: url("../images/simon-game-app-p.jpg");
+}
+
+.about img {
+  max-width: 100px;
+  max-width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .skills {
   width: 100%;
   text-align: center;
@@ -138,49 +183,37 @@ header ul li a {
   padding-bottom: 50px;
 }
 
+.skills h4,
+img {
+  color: #ddd;
+  position: relative;
+  top: 30px;
+}
+
+.skills div img {
+  max-width: 150px;
+  max-height: 100px;
+}
+
 .skills p {
   width: 50%;
   margin: auto;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .skills div {
   width: 360px;
-  height: 200px;
-  background-image: linear-gradient(50deg, #ddd, #fff);
+  height: 180px;
   display: inline-block;
+  background: #fff;
   margin: 10px 10px;
 }
 
-.skills div:hover {
-  box-shadow: 3px 4px 8px #000;
-  filter: grayscale(100%);
-  transition: 1s;
-}
-
-.skills h2 {
-  color: #000 !important;
-  font-size: 22px;
-}
-
-.skills div h2:hover {
-  text-shadow: none;
-  transition: 1s;
-  transform: scale(1.3);
-}
-
-.skills h2 {
+.skills h3 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #ddd;
-  text-shadow: 3px 4px 8px #000;
-}
-
-.skills div .fa {
-  position: relative;
-  top: 30px;
-  color: blue;
+  font-size: 30px;
 }
 
 .contact {
@@ -270,6 +303,10 @@ header ul li a {
   background: #722872;
 }
 
+.contact ul li:nth-child(4) a:hover:before {
+  background: #722872;
+}
+
 /* =============================================================
 added the media queries for make the protfolio responsive all of the device
 ================================================================ */
@@ -279,12 +316,10 @@ added the media queries for make the protfolio responsive all of the device
     width: 90%;
     margin: auto;
   }
-
   .about {
     width: 80%;
     margin: auto;
   }
-
   .skills {
     width: 80%;
     margin: auto;
@@ -295,7 +330,6 @@ added the media queries for make the protfolio responsive all of the device
   .about div {
     width: 300px;
   }
-
   .skills div {
     width: 300px;
   }
@@ -306,21 +340,17 @@ added the media queries for make the protfolio responsive all of the device
     width: 100%;
     padding: 200px 20px;
   }
-
   .about div {
     width: 250px;
   }
-
   .skills p {
     width: 80%;
     text-align: center;
     font-size: 25px;
   }
-
   .skills div {
     width: 250px;
   }
-
   .contact p {
     width: 80%;
     text-align: center;
@@ -332,72 +362,59 @@ added the media queries for make the protfolio responsive all of the device
   .logo {
     width: 25%;
   }
-
   nav {
     width: 100%;
     display: none;
   }
-
   nav ul {
     margin: 0;
     padding: 0;
   }
-
   nav ul li {
     display: block;
     text-align: center;
     border-bottom: 1px solid #fff;
     padding: 8px;
   }
-
   .nav-active {
     display: block;
   }
-
   .hamburgur {
     width: 65%;
     display: block;
     display: inline-block;
     transition: 1s;
   }
-
   .hamburgur span {
     cursor: pointer;
     position: relative;
     left: 85%;
     top: 10px;
   }
-
   .active .line:nth-child(2) {
     opacity: 0;
     transition: 1s;
   }
-
   .active .line:nth-child(1) {
     transform: translateY(13px) rotate(45deg);
     transition: 1s;
   }
-
   .active .line:nth-child(3) {
     transform: translateY(-13px) rotate(-45deg);
     transition: 1s;
   }
-
   .about div {
     width: 150px;
     height: 150px;
   }
-
   .skills div {
     width: 150px;
     height: 150px;
   }
-
   .contact p {
     font-size: 18px;
     width: 100%;
   }
-
   .contact ul {
     width: 50%;
     padding: 5px;
@@ -405,13 +422,11 @@ added the media queries for make the protfolio responsive all of the device
     position: relative;
     left: 50px;
   }
-
   .contact ul li a {
     width: 50px;
     height: 50px;
     font-size: 25px;
   }
-
   .contact ul li a .fa {
     position: relative;
     top: 13px;
@@ -422,21 +437,17 @@ added the media queries for make the protfolio responsive all of the device
   .about div {
     width: 40%;
   }
-
   .skills div {
     width: 40%;
   }
-
   .skills p {
     font-size: 20px;
     width: 100%;
   }
-
   .contact p {
     width: 100%;
     font-size: 20px;
   }
-
   .contact h3 {
     font-size: 15px;
   }
