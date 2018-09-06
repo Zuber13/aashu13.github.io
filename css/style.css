@@ -1,454 +1,548 @@
+@import url(https://fonts.googleapis.com/css?family=Cherry+Swash);
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  border-size: border-box;
-  bcakground: #000;
-}
-
-.wrapper {
-  width: 100%;
-}
-
-.container {
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-header {
-  width: 100%;
-  position: fixed;
-}
-
-.logo {
-  width: 20%;
-  padding: 0;
-  margin: 0;
-  color: #ddd;
-  text-align: center;
-  display: inline-block;
-}
-
-.hamburgur {
-  width: 12%;
-  display: inline-block;
-  display: none;
-}
-
-.line {
-  width: 40px;
-  height: 5px;
-  background: #ddd;
-  display: block;
-  margin: 8px;
-  transition: 1s;
-}
-
-nav {
-  width: 74%;
-  display: inline-block;
-  text-align: right;
-}
-
-nav ul {
-  list-style: none;
   margin: 0;
   padding: 0;
   vertical-align: middle;
 }
 
-header ul li {
-  display: inline-block;
-  padding: 20px 10px;
+p {
+  line-height: 20px;
 }
 
-header ul li a {
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.heading {
+.header {
   width: 100%;
-  padding: 300px;
-  display: felx;
-  background-image: linear-gradient(50deg, #ddd, #000);
-  text-align: center;
-  background-attachment: fixed;
-}
-
-.heading h2 {
-  font-size: 80px;
-  color: #ddd;
-  text-shadow: 0 4px 10px #000;
-}
-
-#para {
-  font-size: 20px;
-  color: #ddd;
-}
-
-.heading .fa {
-  font-size: 50px;
-  text-shadow: 0 10px 20px 10px #;
-  position: relative;
-  top: 100px;
-}
-
-.about {
-  width: 100%;
-  height: auto;
-  background: #fff;
-  text-align: center;
-  padding-bottom: 50px;
-  background-image: url(../images/jack_dorsey.webp);
-}
-
-.about h2 {
-  text-shadow: 3px 4px 8px #000;
-}
-
-.about p {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  font-size: 25px;
-}
-
-.about div {
-  width: 360px;
-  height: 230px;
-  background: #000;
-  display: inline-block;
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  margin: 10px;
-  font-size: 40px;
-  line-height: 230px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-.about div:hover {
-  transform: scale(1.1);
-  transition: 1s linear;
-}
-
-.about #tribute {
-  background-image: url("../images/jack-dorsey.jpg");
-}
-
-.about #random {
-  background-image: url("../images/quote.jpg");
-}
-
-.about #weather {
-  background-image: url("../images/cloud.png");
-}
-
-.about #wikipedia {
-  background-image: url("../images/wikipedia.jpg");
-}
-
-.about #twitch {
-  background-image: url("../images/twitch.png");
-}
-
-.about #calculator {
-  background-image: url("../images/Calculator-icon.png");
-}
-
-.about #pomodoro {
-  background-image: url("../images/pomo-clock.png");
-}
-
-.about #tic_tac_toe {
-  background-image: url("../images/Tic-Tac-Toe-Game-grey.ico");
-}
-
-.about #simon {
-  background-image: url("../images/simon-game-app-p.jpg");
-}
-
-.about img {
-  max-width: 100px;
-  max-width: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.skills {
-  width: 100%;
-  text-align: center;
-  background: #ddd;
-  padding-bottom: 50px;
-}
-
-.skills h4,
-img {
-  color: #ddd;
-  position: relative;
-  top: 30px;
-}
-
-.skills div img {
-  max-width: 150px;
-  max-height: 100px;
-}
-
-.skills p {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  font-size: 20px;
-}
-
-.skills div {
-  width: 360px;
-  height: 180px;
-  display: inline-block;
-  background: #fff;
-  margin: 10px 10px;
-}
-
-.skills h3 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 30px;
-}
-
-.contact {
-  width: 100%;
-  background: #fff;
-  padding: 100px;
-  padding-top: 0;
-}
-
-.contact h2 {
-  text-shadow: 3px 4px 8px #000;
-}
-
-.contact p {
-  width: 60%;
-  margin: auto;
-  text-align: center;
-  font-size: 22px;
-  position: relative;
-  top: 10px;
-}
-
-.contact ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  position: relative;
-  top: 30px;
-}
-
-.contact li {
-  display: inline-block;
-  padding: 10px;
-}
-
-.contact li a {
-  width: 80px;
-  height: 80px;
-  background: red;
-  text-decoration: none;
-  font-size: 40px;
-  display: block;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  transition: 1s;
+  background: rgb(245, 194, 6);
+  line-height: 10px;
+  position: sticky;
+  top: 0;
   z-index: 1;
 }
 
-.contact ul li a .fa {
-  position: relative;
-  top: 20px;
+.header header {
+  width: 65%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 39%;
+  display: inline-block;
+  font-size: 18px;
+  font: 900;
   color: #fff;
+}
+
+.menu {
+  width: 60%;
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.hamburgur {
+  font-size: 30px;
+  display: none;
+  color: #fff;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding: 0 13px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu ul li a:hover {
+  color: #0000;
   transition: 1s;
+}
+
+/* end header here */
+
+.section-1 {
+  background-attachment: fixed;
+}
+
+.section-1 .background {
+  background-image: url('../images/background-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-attachment: fixed;
+  height: calc(100% - 51px);
+  position: absolute;
+  transform: skewY(-6deg);
+  transform-origin: 0;
+  z-index: -1;
+}
+
+.section-1 .content {
+  min-height: 350px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  color: #f2f2f2;
+}
+
+.section-1 .content .container {
+  width: 65%;
+  margin: auto;
+  font-family: sans-serif;
+  position: relative;
+  bottom: 50px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 650;
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+/* 
+.desc {
+  position: relative;
+  top: -30px;
+} */
+
+/* end section 1 here */
+
+.section-2 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5em;
+  line-height: 20px;
+}
+
+.section-2 .container {
+  /* max-width: 800px; */
+  width: 64%;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #0b4786;
+}
+
+.skill {
+  width: 120px;
+  height: 100px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  padding: 20px;
+  padding-top: 40px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0.6rem 1.6rem rgba(60, 127, 239, 0.15);
+  position: relative;
+  font-size: 15px;
+}
+
+.section-2 .container .about p {
+  position: relative;
+  top: 0;
+  white-space: unset;
+}
+
+.skill .icon {
+  width: 50px;
+  margin: auto;
+}
+
+.skill:before,
+.skill:after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: -0.5px;
+  left: -1px;
+  height: 9px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.skill:after {
+  right: 50%;
+  left: 50%;
+  background: yellow;
+  transition: left 0.3s, right 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5%);
+  transition: 0.4s;
+}
+
+.skill:hover:after {
+  left: -1px;
+  right: -1px;
+}
+
+.skill.html:before {
+  background-color: rgba(228, 78, 38, 0.2);
+}
+
+.skill.html:after {
+  background-color: rgba(228, 78, 38, 0.8);
+}
+
+.skill.css:before {
+  background-color: rgba(21, 114, 182, 0.2);
+}
+
+.skill.css:after {
+  background-color: rgba(21, 114, 182, 0.8);
+}
+
+.skill.javascript:before {
+  background-color: rgba(240, 219, 79, 0.4);
+}
+
+.skill.javascript:after {
+  background-color: rgba(240, 219, 79, 1);
+}
+
+.skill.jquery:before {
+  background-color: rgba(8, 104, 172, 0.2);
+}
+
+.skill.jquery:after {
+  background-color: rgba(8, 104, 172, 0.8);
+}
+
+.skill.bootstrap:before {
+  background-color: rgba(91, 66, 129, 0.2);
+}
+
+.skill.bootstrap:after {
+  background-color: rgba(91, 66, 129, 0.8);
+}
+
+.skill.python:before {
+  background-color: rgba(255, 216, 69, 0.4);
+}
+
+.skill.python:after {
+  background-color: rgba(255, 216, 69, 1);
+}
+
+.skill.github:before {
+  background-color: rgba(236, 81, 40, 0.2);
+}
+
+.skill.github:after {
+  background-color: rgba(236, 81, 40, 0.8);
+}
+
+.skill.wordpress:before {
+  background-color: rgba(72, 72, 72, 0.2);
+}
+
+.skill.wordpress:after {
+  background-color: rgba(72, 72, 72, 0.8);
+}
+
+/* close setion 2 */
+
+.section-3 {
+  width: 100%;
+  padding-top: 3em;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+}
+
+.section-3 .container {
+  width: 64%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: auto;
+  position: relative;
+}
+
+.section-3 .background {
+  background: #f3f3f3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transform: skewY(-6deg);
+}
+
+.projects {
+  max-width: 100%;
+  position: relative;
+}
+
+.projects .project {
+  display: inline-block;
+  margin: 20px 9px;
+  white-space: inherit;
+  max-width: 300px;
+  max-height: 300px;
+  vertical-align: middle;
+  font-size: 15px;
+  color: #888;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0 0 5px 5px;
+}
+
+strong {
+  position: relative;
+  top: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+.portfolio {
+  width: 100%;
+  margin: auto;
+  white-space: unset;
+  font-size: 20px;
+  color: #555;
+  font-family: sans-serif;
+}
+
+.projects .project img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  height: auto;
+  border-radius: 5px;
+}
+
+.section-4 {
+  width: 100%;
+  position: relative;
+  top: 40px;
+  text-align: center;
+}
+
+.section-4 .container {
+  width: 64%;
+  margin: auto;
+  padding: 10px;
+  font-family: sans-serif;
+  ;
+  color: #0b4786;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.section-4 .container .content h2 {
+  font-weight: 800;
+}
+
+.section-4 .container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media {
+  padding-bottom: 20px;
+}
+
+.section-4 .container ul li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.section-4 .container ul li a {
+  color: #0b4786;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  background: #ddd;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 1s;
+}
+
+.section-4 .container ul li a .fa {
+  position: relative;
+  color: #fff;
+  transition: 1.2s;
   z-index: 3;
 }
 
-.contact ul li a:hover .fa {
-  transform: rotatex(360deg);
+.section-4 .container ul li a:hover .fa {
+  transform: rotateX(360deg);
 }
 
-.contact ul li a:before {
+.section-4 .container ul li a:before {
   content: "";
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  transition: 1s;
+  background: #ddd;
+  transition: 1s ease;
   z-index: 2;
 }
 
-.contact ul li a:hover:before {
+.section-4 .container ul li a:hover:before {
   top: 0;
 }
 
-.contact ul li:nth-child(1) a:hover:before {
-  background: green;
+.email {
+  font-weight: 700;
+  color: #784594;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.contact ul li:nth-child(2) a:hover:before {
-  background: #55acee;
+.section-4 .container ul li:nth-child(1) a:hover:before {
+  background-color: #34465d;
 }
 
-.contact ul li:nth-child(3) a:hover:before {
-  background: #722872;
+.section-4 .container ul li:nth-child(2) a:hover:before {
+  background-color: #55acee;
 }
 
-.contact ul li:nth-child(4) a:hover:before {
-  background: #722872;
+.section-4 .container ul li:nth-child(3) a:hover:before {
+  background-color: #006400;
 }
 
-/* =============================================================
-added the media queries for make the protfolio responsive all of the device
-================================================================ */
+.section-4 .container ul li:nth-child(4) a:hover:before {
+  background-color: #800080;
+}
 
-@media (min-width: 2074px) {
-  .container {
+/*  start media queries here for majke website responsive in the all verious device */
+
+@media screen and (max-width:1017px) {
+  .section-3 .container {
+    width: 80%;
+    background
+  }
+}
+
+.section-4 .container ul li a:hover {
+  color: #0b4786;
+  transition: 0.4s;
+}
+
+.fa-heart {
+  color: red;
+}
+
+@media screen and (max-width: 871px) {
+  .header header {
     width: 90%;
-    margin: auto;
+    padding-bottom: 10px;
   }
-  .about {
-    width: 80%;
-    margin: auto;
-  }
-  .skills {
-    width: 80%;
-    margin: auto;
-  }
-}
-
-@media (max-width: 875px) {
-  .about div {
-    width: 300px;
-  }
-  .skills div {
-    width: 300px;
-  }
-}
-
-@media (max-width: 676px) {
-  .heading {
-    width: 100%;
-    padding: 200px 20px;
-  }
-  .about div {
-    width: 250px;
-  }
-  .skills p {
-    width: 80%;
-    text-align: center;
-    font-size: 25px;
-  }
-  .skills div {
-    width: 250px;
-  }
-  .contact p {
-    width: 80%;
-    text-align: center;
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 570px) {
-  .logo {
-    width: 25%;
-  }
-  nav {
+  .menu {
     width: 100%;
     display: none;
   }
-  nav ul {
-    margin: 0;
-    padding: 0;
-  }
-  nav ul li {
+  .menu ul li {
     display: block;
     text-align: center;
-    border-bottom: 1px solid #fff;
-    padding: 8px;
+    margin: 20px 0;
+    border-bottom: 1px solid rgb(247, 201, 30);
+    line-height: 20px;
   }
-  .nav-active {
-    display: block;
+  .logo {
+    font-size: 15px;
+    width: 40%;
+    text-align: left;
   }
   .hamburgur {
-    width: 65%;
-    display: block;
+    width: 59%;
     display: inline-block;
-    transition: 1s;
-  }
-  .hamburgur span {
+    text-align: right;
+    vertical-align: middle;
     cursor: pointer;
-    position: relative;
-    left: 85%;
-    top: 10px;
   }
-  .active .line:nth-child(2) {
-    opacity: 0;
+  .active {
+    display: block;
     transition: 1s;
   }
-  .active .line:nth-child(1) {
-    transform: translateY(13px) rotate(45deg);
-    transition: 1s;
-  }
-  .active .line:nth-child(3) {
-    transform: translateY(-13px) rotate(-45deg);
-    transition: 1s;
-  }
-  .about div {
-    width: 150px;
-    height: 150px;
-  }
-  .skills div {
-    width: 150px;
-    height: 150px;
-  }
-  .contact p {
-    font-size: 18px;
-    width: 100%;
-  }
-  .contact ul {
-    width: 50%;
-    padding: 5px;
-    display: flex;
-    position: relative;
-    left: 50px;
-  }
-  .contact ul li a {
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-  }
-  .contact ul li a .fa {
-    position: relative;
-    top: 13px;
+  .section-1 .content .container,
+  .section-2 .container,
+  .section-3 .container,
+  .section-4 .container {
+    width: 90%;
   }
 }
 
-@media (max-width: 360px) {
-  .about div {
-    width: 40%;
-  }
-  .skills div {
-    width: 40%;
-  }
-  .skills p {
-    font-size: 20px;
+@media screen and (max-width:729px) {
+  .section-3 .container {
     width: 100%;
   }
-  .contact p {
-    width: 100%;
-    font-size: 20px;
+  .portfolio {
+    width: 80%;
   }
-  .contact h3 {
-    font-size: 15px;
+  .projects .project {
+    max-width: 260px;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width:580px) {
+  .projects .project {
+    max-width: 300px;
+    height: 300px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width:508px) {
+  .logo {
+    width: 65%;
+  }
+  .hamburgur {
+    width: 30%;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .skill {
+    width: 90px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width:381px) {
+  .skill {
+    width: 80px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width:357px) {
+  .title {
+    font-size: 30px;
+    font-weight: 650;
+  }
+  .skill {
+    width: 120px;
+    height: 100px;
   }
 }
