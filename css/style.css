@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Cherry+Swash);
+@import url(https: //fonts.googleapis.com/css?family=Cherry+Swash);
+
 html {
   height: 100%;
   box-sizing: border-box;
@@ -68,12 +69,11 @@ p {
 }
 
 .menu ul li a:hover {
-  color: #0000;
+  color: #0b4786;
   transition: 1s;
 }
 
 /* end header here */
-
 .section-1 {
   background-attachment: fixed;
 }
@@ -123,9 +123,7 @@ p {
   position: relative;
   top: -30px;
 } */
-
 /* end section 1 here */
-
 .section-2 {
   width: 100%;
   text-align: center;
@@ -264,7 +262,6 @@ p {
 }
 
 /* close setion 2 */
-
 .section-3 {
   width: 100%;
   padding-top: 3em;
@@ -434,7 +431,6 @@ strong {
 }
 
 /*  start media queries here for majke website responsive in the all verious device */
-
 @media screen and (max-width:1017px) {
   .section-3 .container {
     width: 80%;
@@ -456,10 +452,12 @@ strong {
     width: 90%;
     padding-bottom: 10px;
   }
+
   .menu {
     width: 100%;
     display: none;
   }
+
   .menu ul li {
     display: block;
     text-align: center;
@@ -467,11 +465,13 @@ strong {
     border-bottom: 1px solid rgb(247, 201, 30);
     line-height: 20px;
   }
+
   .logo {
     font-size: 15px;
     width: 40%;
     text-align: left;
   }
+
   .hamburgur {
     width: 59%;
     display: inline-block;
@@ -479,10 +479,13 @@ strong {
     vertical-align: middle;
     cursor: pointer;
   }
+
   .active {
     display: block;
     transition: 1s;
+    z-index: -1;
   }
+
   .section-1 .content .container,
   .section-2 .container,
   .section-3 .container,
@@ -495,9 +498,11 @@ strong {
   .section-3 .container {
     width: 100%;
   }
+
   .portfolio {
     width: 80%;
   }
+
   .projects .project {
     max-width: 260px;
     height: 260px;
@@ -516,6 +521,7 @@ strong {
   .logo {
     width: 65%;
   }
+
   .hamburgur {
     width: 30%;
     text-align: right;
@@ -541,6 +547,7 @@ strong {
     font-size: 30px;
     font-weight: 650;
   }
+
   .skill {
     width: 120px;
     height: 100px;
