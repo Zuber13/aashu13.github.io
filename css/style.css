@@ -425,6 +425,28 @@ strong {
 
 /*  start media queries here for majke website responsive in the all verious device */
 
+.goToTop {
+  position: fixed;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  border-radius: 50%;
+  bottom: 36px;
+  background-color: #ddd;
+  color:#fff;
+  transform: scale(0);
+  cursor: pointer;
+}
+
+.addTopClass{
+  transition: all 0.4 ease
+  transform: scale(1);
+}
+
 
 @media screen and (max-width:1017px) {
   .section-3 .container {

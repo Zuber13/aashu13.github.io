@@ -19,8 +19,19 @@ $(document).ready(function () {
     })
 });
 
+window.addEventListener('scroll',function(){
+    if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+        goToTopButton.classList.add('addTopClass')
+    }else{
+        goToTopButton.classList.remove('addTopClass');
+    }
+})
 
-
+function goToTop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    // window.scrollTop(0, 0);
+}
 
 
 var i = 0;
