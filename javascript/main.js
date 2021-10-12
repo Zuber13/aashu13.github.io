@@ -29,8 +29,7 @@ window.addEventListener('scroll',function(){
 
 function goToTop(){
     document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    // window.scrollTop(0, 0);
+    document.documentElement = 0;
 }
 
 
