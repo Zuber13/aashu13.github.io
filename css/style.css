@@ -444,7 +444,7 @@ strong {
   font-size: 26px;
   border-radius: 50%;
   bottom: 36px;
-  background-color: #ddd;
+  background-color: rgb(245, 194, 6);
   color:#fff;
   transform: scale(0);
   cursor: pointer;
