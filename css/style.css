@@ -3,7 +3,9 @@
 html {
   height: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
 
 body {
   margin: 0;
@@ -298,6 +300,11 @@ p {
   color: #888;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 0 0 5px 5px;
+  transition: all 0.4s ease;
+}
+
+.projects .project:hover{
+  transform: translatey(-15px);
 }
 
 strong {
@@ -423,7 +430,8 @@ strong {
   background-color: #800080;
 }
 
-/*  start media queries here for majke website responsive in the all verious device */
+
+/* make button for go to top */
 
 .goToTop {
   position: fixed;
@@ -443,9 +451,10 @@ strong {
 }
 
 .addTopClass{
-  transition: all 0.4 ease
+  transition: all 0.4 ease-in-out;
   transform: scale(1);
 }
+/*  start media queries here for majke website responsive in the all verious device */
 
 
 @media screen and (max-width:1017px) {

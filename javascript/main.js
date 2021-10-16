@@ -19,6 +19,11 @@ $(document).ready(function () {
     })
 });
 
+// make funtio fot going to top
+
+var goToTopButton = document.getElementById('goToTop');
+console.log(goToTopButton)
+
 window.addEventListener('scroll',function(){
     if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
         goToTopButton.classList.add('addTopClass')
@@ -29,13 +34,14 @@ window.addEventListener('scroll',function(){
 
 function goToTop(){
     document.body.scrollTop = 0;
-    document.documentElement = 0;
+    document.documentElement.scrollTop = 0;
+    // window.scrollTop(0, 0);
 }
 
+goToTopButton.addEventListener("click" , goToTop);
 
 var i = 0;
 var text = "Front-end developer, CodeNewbie, Free Code Camper, Wanna be full stack developer";
-
 function typeWriter() {
     if (i < text.length) {
         document.getElementById('showText').innerHTML += text.charAt(i);
