@@ -544,7 +544,7 @@ strong {
   @media screen and (max-width:580px) {
     .projects .project {
       max-width: 300px;
-      height: 300px;
+      height: 260px;
       margin: 10px;
     }
   }
