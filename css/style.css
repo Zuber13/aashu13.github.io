@@ -451,7 +451,7 @@ strong {
 }
 
 .addTopClass{
-  transition: all 0.4 ease-in-out;
+  transition: all 0.5 ease-in-out;
   transform: scale(1);
 }
 /*  start media queries here for majke website responsive in the all verious device */
