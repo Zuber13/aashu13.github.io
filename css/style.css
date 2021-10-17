@@ -571,7 +571,7 @@ strong {
 
   @media screen and (max-width:450px) {
     .skill {
-      width: 90px;
+      width: 100px;
       height: 100px;
     }
   }
