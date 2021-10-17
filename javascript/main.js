@@ -1,17 +1,16 @@
 $(document).ready(function () {
 
     $('a[href^="#"]').on("click", function (e) {
-        e.preventDefault();
+        e.preventDefault(); 
 
         var target = this.hash;
+        console.log(target); 
         var $target = $(target);
-
-        $("html,body").animate({
-                scrollTop: $target.offset().top
-            },
-            1000,
-            "swing"
-        );
+        if(target == "#about"){
+            $("html,body").animate({scrollTop: $target.offset().top - 100 },100,"swing");
+        }else{
+            $("html,body").animate({scrollTop: $target.offset().top},100,"swing");
+        }
     });
 
     $("#menu-bar").on("click", function () {
@@ -20,10 +19,8 @@ $(document).ready(function () {
 });
 
 // make funtio fot going to top
-
 var goToTopButton = document.getElementById('goToTop');
-console.log(goToTopButton)
-
+ 
 window.addEventListener('scroll',function(){
     if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
         goToTopButton.classList.add('addTopClass')
@@ -35,12 +32,16 @@ window.addEventListener('scroll',function(){
 function goToTop(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    // window.scrollTop(0, 0);
+    window.scrollTop(0, 0);
 }
 
 goToTopButton.addEventListener("click" , goToTop);
 
+// make function for typewriter in js
+
 var i = 0;
+window.addEventListener("load", typeWriter);
+
 var text = "Front-end developer, CodeNewbie, Free Code Camper, Wanna be full stack developer";
 function typeWriter() {
     if (i < text.length) {
@@ -49,5 +50,3 @@ function typeWriter() {
         setTimeout(typeWriter, 150);
     }
 }
-
-window.addEventListener("load", typeWriter);

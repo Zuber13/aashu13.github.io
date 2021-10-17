@@ -125,38 +125,46 @@ p {
 .section-2 {
   width: 100%;
   text-align: center;
-  line-height: 20px;
+  /* line-height: 20px; */
+  /* background-color: red; */  
 }
 
 .section-2 .container {
   width: 64%;
   margin: auto;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
+  line-height: 22px;
   font-family: sans-serif;
   color: #0b4786;
   position: relative;
-  bottom: 50px;
+  /* bottom: 50px; */
+}
+.section-2 .container h2{
+  margin: 0;
 }
 
 .skill {
   width: 120px;
-  height: 100px;
+  height: 120px;
   border: 1px solid #ddd;
   display: inline-block;
   padding: 20px;
-  padding-top: 40px;
-  margin: 15px;
+  padding-top: 30px;
+  margin: 5px;
   border-radius: 5px;
-  box-shadow: 0 0.6rem 1.6rem rgba(60, 127, 239, 0.15);
+  box-shadow: 0 0.5rem 2.5rem rgb(60 127 239 / 15%);
   position: relative;
   font-size: 15px;
+  line-height: 50px;
+  color: #888;
 }
 
 .section-2 .container .about p {
   position: relative;
   top: 0;
   white-space: unset;
+  line-height: 24px;
 }
 
 .skill .icon {
@@ -318,9 +326,10 @@ strong {
   width: 100%;
   margin: auto;
   white-space: unset;
-  font-size: 20px;
-  color: #555;
+  font-size: 17px;
+  color: #888;
   font-family: sans-serif;
+  font-weight: normal;
 }
 
 .projects .project img {
@@ -436,12 +445,12 @@ strong {
 .goToTop {
   position: fixed;
   right: 10px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 26px;
+  font-size: 22px;
   border-radius: 50%;
   bottom: 36px;
   background-color: rgb(245, 194, 6);
