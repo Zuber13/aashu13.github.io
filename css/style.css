@@ -259,12 +259,12 @@ p {
   background-color: rgba(236, 81, 40, 0.8);
 }
 
-.skill.wordpress:before {
-  background-color: rgba(72, 72, 72, 0.2);
+.skill.react:before {
+  background-color: #9DCFE9;
 }
 
-.skill.wordpress:after {
-  background-color: rgba(72, 72, 72, 0.8);
+.skill.react:after {
+  background-color: #0a7dbb;
 }
 
 /* close setion 2 */
