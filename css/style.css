@@ -172,6 +172,18 @@ p {
   margin: auto;
 }
 
+.react-icon , .node-icon{
+  font-size: 50px;
+}
+
+.react-icon{
+  fill: #16a5d4;
+}
+
+.node-icon{
+  fill: #43853d;
+}
+
 .skill:before,
 .skill:after {
   content: "";
@@ -227,6 +239,14 @@ p {
   background-color: rgba(240, 219, 79, 1);
 }
 
+.skill.react:before {
+  background-color: rgba(240, 219, 79, 0.4);
+}
+
+.skill.react:after {
+  background-color: rgb(30, 131, 225);
+}
+
 .skill.jquery:before {
   background-color: rgba(8, 104, 172, 0.2);
 }
@@ -243,12 +263,12 @@ p {
   background-color: rgba(91, 66, 129, 0.8);
 }
 
-.skill.python:before {
-  background-color: rgba(255, 216, 69, 0.4);
+.skill.node-js:before {
+  background-color: rgba(4, 118, 54, 0.4);
 }
 
-.skill.python:after {
-  background-color: rgba(255, 216, 69, 1);
+.skill.node-js:after {
+  background-color: rgb(2, 79, 2);
 }
 
 .skill.github:before {
