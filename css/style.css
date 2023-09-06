@@ -239,13 +239,13 @@ p {
   background-color: rgba(240, 219, 79, 1);
 }
 
-.skill.react:before {
+/* .skill.react:before {
   background-color: rgba(240, 219, 79, 0.4);
 }
 
 .skill.react:after {
   background-color: rgb(30, 131, 225);
-}
+} */
 
 .skill.jquery:before {
   background-color: rgba(8, 104, 172, 0.2);
@@ -268,7 +268,7 @@ p {
 }
 
 .skill.node-js:after {
-  background-color: rgb(2, 79, 2);
+  background-color: #43853d;
 }
 
 .skill.github:before {
